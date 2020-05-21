@@ -4,10 +4,6 @@ class Formatter {
   }
 
   static sanitize(string) {
-    // let stringArray = string.split(" ")
-    // return stringArray.map(string => {
-    //   return string.replace(/[^a-zA-Z0-9.-]/g, "")
-    // }).join(" ")
     return string.replace(/[^A-Za-z0-9 '-]/g, '')
   }
 
